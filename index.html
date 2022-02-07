@@ -9,9 +9,31 @@
 </head>
 <body>
     <body class="flex-column min-100-vh">
-        <header class="hero">
-          <h1 class="app-title"><i class="fab fa-github"></i>Weather Dashboard</h1>
+        <header class="hero bg-primary p-4">
+          <h1 class="d-flex justify-content-center"><i class="fab fa-github"></i>Weather Dashboard</h1>
         </header>
+
+        <main class="flex-row justify-space-between">
+          <div class="col-12 col-md-4 p-4">
+            <div class="card">
+              <h3 class="card-header text-uppercase">Search Your City</h3>
+              <form id="user-form" class="card-body">
+                <label class="form-label" for="city">City Name:</label>
+                <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+                <button type="submit" class="btn border border-primary">Search</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 p-4">
+            <div class="card">
+              <h3 class="card-header text-uppercase">Your Previous Searches</h3>
+              <div id="city-buttons" class="card-body">
+              </div>
+            </div>
+          </div>
+        </main>
+      
     
 </body>
 </html>
